@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+*.pyc
+evidence/live/
+reports/live/
+reports/native-wazuh-validation.json
+*.evtx
+*.pcap
+*.pcapng

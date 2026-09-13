@@ -1,0 +1,13 @@
+{
+  "name": "story-security-log-analyzer",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Authentication log parsing, time-window detection, and reviewable reports",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node scripts/demo.js",
+    "benchmark": "node scripts/benchmark.js"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "settings": {
+    "threshold": 5,
+    "windowSeconds": 300,
+    "successWindowSeconds": 600,
+    "allowlist": []
+  },
+  "summary": {
+    "totalEvents": 15,
+    "failures": 10,
+    "successes": 5,
+    "sourceIPs": 3,
+    "alerts": 2
+  },
+  "sources": [
+    {
+      "ip": "192.0.2.10",
+      "failures": 5,
+      "successes": 1,
+      "allowlisted": false
+    },
+    {
+      "ip": "192.0.2.20",
+      "failures": 5,
+      "successes": 1,
+      "allowlisted": false
+    },
+    {
+      "ip": "192.0.2.30",
+      "failures": 0,
+      "successes": 3,
+      "allowlisted": false
+    }
+  ],
+  "alerts": [
+    {
+      "id": "AUTH-1",
+      "rule": "failure_burst",
+      "severity": "medium",
+      "ip": "192.0.2.10",
+      "timestamp": "2026-08-01T12:01:20.000Z",
+      "windowStart": "2026-08-01T12:00:00.000Z",
+      "attempts": 5,
+      "users": [
+        "lab_alex"
+      ],
+      "evidenceLines": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "explanation": "5 failed authentications within 300 seconds; investigate before treating as malicious."
+    },
+    {
+      "id": "AUTH-2",
+      "rule": "success_after_burst",
+      "severity": "high",
+      "ip": "192.0.2.10",
+      "timestamp": "2026-08-01T12:01:40.000Z",
+      "user": "lab_alex",
+      "relatedAlert": "AUTH-1",
+      "evidenceLines": [
+        7
+      ],
+      "explanation": "Successful authentication from the same source IP after a failure burst. This does not prove account compromise; shared IPs and legitimate retries are possible."
+    }
+  ],
+  "provenance": "Controlled synthetic authentication fixture. Results are a local software demonstration, not a production incident.",
+  "parseErrors": {
+    "errorCount": 0,
+    "examples": []
+  }
+}

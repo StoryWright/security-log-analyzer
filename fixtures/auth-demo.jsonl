@@ -1,0 +1,16 @@
+# SYNTHETIC fixtures, not captured traffic. RFC 5737 example addresses.
+{"timestamp":"2026-08-01T12:00:00.000Z","event":"failure","src_ip":"192.0.2.10","user":"lab_alex","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:00:20.000Z","event":"failure","src_ip":"192.0.2.10","user":"lab_alex","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:00:40.000Z","event":"failure","src_ip":"192.0.2.10","user":"lab_alex","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:01:00.000Z","event":"failure","src_ip":"192.0.2.10","user":"lab_alex","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:01:20.000Z","event":"failure","src_ip":"192.0.2.10","user":"lab_alex","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:01:40.000Z","event":"success","src_ip":"192.0.2.10","user":"lab_alex","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:00:00.000Z","event":"failure","src_ip":"192.0.2.20","user":"lab_morgan","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:06:40.000Z","event":"failure","src_ip":"192.0.2.20","user":"lab_morgan","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:13:20.000Z","event":"failure","src_ip":"192.0.2.20","user":"lab_morgan","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:20:00.000Z","event":"failure","src_ip":"192.0.2.20","user":"lab_morgan","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:26:40.000Z","event":"failure","src_ip":"192.0.2.20","user":"lab_morgan","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:30:00.000Z","event":"success","src_ip":"192.0.2.20","user":"lab_morgan","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:00:10.000Z","event":"success","src_ip":"192.0.2.30","user":"lab_jordan","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:00:50.000Z","event":"success","src_ip":"192.0.2.30","user":"lab_jordan","host":"lab-linux-01"}
+{"timestamp":"2026-08-01T12:01:50.000Z","event":"success","src_ip":"192.0.2.30","user":"lab_jordan","host":"lab-linux-01"}

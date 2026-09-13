@@ -1,0 +1,238 @@
+TAP version 13
+# Subtest: legacy format stays compatible with original project
+ok 1 - legacy format stays compatible with original project
+  ---
+  duration_ms: 1.4528
+  type: 'test'
+  ...
+# Subtest: parses ISO OpenSSH failure with invalid user
+ok 2 - parses ISO OpenSSH failure with invalid user
+  ---
+  duration_ms: 0.3258
+  type: 'test'
+  ...
+# Subtest: parses accepted public key login
+ok 3 - parses accepted public key login
+  ---
+  duration_ms: 3.7531
+  type: 'test'
+  ...
+# Subtest: requires year for classic syslog
+ok 4 - requires year for classic syslog
+  ---
+  duration_ms: 0.4858
+  type: 'test'
+  ...
+# Subtest: parses classic syslog with explicit year
+ok 5 - parses classic syslog with explicit year
+  ---
+  duration_ms: 0.2158
+  type: 'test'
+  ...
+# Subtest: rejects invalid date 2026-02-30T12:00:00Z
+ok 6 - rejects invalid date 2026-02-30T12:00:00Z
+  ---
+  duration_ms: 0.7097
+  type: 'test'
+  ...
+# Subtest: rejects invalid date 2025-02-29T12:00:00Z
+ok 7 - rejects invalid date 2025-02-29T12:00:00Z
+  ---
+  duration_ms: 0.0924
+  type: 'test'
+  ...
+# Subtest: rejects invalid date 2026-13-01T00:00:00Z
+ok 8 - rejects invalid date 2026-13-01T00:00:00Z
+  ---
+  duration_ms: 0.0664
+  type: 'test'
+  ...
+# Subtest: rejects invalid date 2026-01-01T24:00:00Z
+ok 9 - rejects invalid date 2026-01-01T24:00:00Z
+  ---
+  duration_ms: 0.1078
+  type: 'test'
+  ...
+# Subtest: rejects invalid date 2026-01-01T12:60:00Z
+ok 10 - rejects invalid date 2026-01-01T12:60:00Z
+  ---
+  duration_ms: 0.1263
+  type: 'test'
+  ...
+# Subtest: rejects invalid date 2026-01-01T12:00:61Z
+ok 11 - rejects invalid date 2026-01-01T12:00:61Z
+  ---
+  duration_ms: 0.0792
+  type: 'test'
+  ...
+# Subtest: rejects invalid date 2026-01-01T12:00:00
+ok 12 - rejects invalid date 2026-01-01T12:00:00
+  ---
+  duration_ms: 0.0536
+  type: 'test'
+  ...
+# Subtest: rejects invalid date 2026-01-01T00:00:00+99:00
+ok 13 - rejects invalid date 2026-01-01T00:00:00+99:00
+  ---
+  duration_ms: 0.0429
+  type: 'test'
+  ...
+# Subtest: accepts a valid leap day and equivalent timezone
+ok 14 - accepts a valid leap day and equivalent timezone
+  ---
+  duration_ms: 0.0832
+  type: 'test'
+  ...
+# Subtest: canonicalizes IPv6 spellings
+ok 15 - canonicalizes IPv6 spellings
+  ---
+  duration_ms: 0.0749
+  type: 'test'
+  ...
+# Subtest: rejects invalid IPv4
+ok 16 - rejects invalid IPv4
+  ---
+  duration_ms: 0.059
+  type: 'test'
+  ...
+# Subtest: rejects inherited event property names
+ok 17 - rejects inherited event property names
+  ---
+  duration_ms: 0.0746
+  type: 'test'
+  ...
+# Subtest: skips blanks, reports malformed lines, does not echo raw data
+ok 18 - skips blanks, reports malformed lines, does not echo raw data
+  ---
+  duration_ms: 0.2807
+  type: 'test'
+  ...
+# Subtest: caps error examples without hiding total
+ok 19 - caps error examples without hiding total
+  ---
+  duration_ms: 0.5233
+  type: 'test'
+  ...
+# Subtest: malformed JSON errors do not disclose log fragments
+ok 20 - malformed JSON errors do not disclose log fragments
+  ---
+  duration_ms: 0.0964
+  type: 'test'
+  ...
+# Subtest: invalid input format is rejected even on empty input
+ok 21 - invalid input format is rejected even on empty input
+  ---
+  duration_ms: 0.0666
+  type: 'test'
+  ...
+# Subtest: enforces event limit
+ok 22 - enforces event limit
+  ---
+  duration_ms: 0.0957
+  type: 'test'
+  ...
+# Subtest: no alert under threshold
+ok 23 - no alert under threshold
+  ---
+  duration_ms: 1.1364
+  type: 'test'
+  ...
+# Subtest: five failures create one burst alert with exact evidence
+ok 24 - five failures create one burst alert with exact evidence
+  ---
+  duration_ms: 0.6266
+  type: 'test'
+  ...
+# Subtest: window boundary is inclusive
+ok 25 - window boundary is inclusive
+  ---
+  duration_ms: 0.1686
+  type: 'test'
+  ...
+# Subtest: failures outside window do not accumulate
+ok 26 - failures outside window do not accumulate
+  ---
+  duration_ms: 0.1088
+  type: 'test'
+  ...
+# Subtest: separate IPs cannot combine into one burst
+ok 27 - separate IPs cannot combine into one burst
+  ---
+  duration_ms: 0.0733
+  type: 'test'
+  ...
+# Subtest: input ordering does not change detections
+ok 28 - input ordering does not change detections
+  ---
+  duration_ms: 0.1624
+  type: 'test'
+  ...
+# Subtest: sustained burst is deduplicated
+ok 29 - sustained burst is deduplicated
+  ---
+  duration_ms: 0.1316
+  type: 'test'
+  ...
+# Subtest: a later independent burst raises a second alert
+ok 30 - a later independent burst raises a second alert
+  ---
+  duration_ms: 0.0935
+  type: 'test'
+  ...
+# Subtest: success after burst is correlated once
+ok 31 - success after burst is correlated once
+  ---
+  duration_ms: 0.117
+  type: 'test'
+  ...
+# Subtest: late success is not correlated
+ok 32 - late success is not correlated
+  ---
+  duration_ms: 0.0848
+  type: 'test'
+  ...
+# Subtest: allowlist suppresses alerts but retains counts
+ok 33 - allowlist suppresses alerts but retains counts
+  ---
+  duration_ms: 0.1008
+  type: 'test'
+  ...
+# Subtest: empty data has explicit zero totals
+ok 34 - empty data has explicit zero totals
+  ---
+  duration_ms: 0.0661
+  type: 'test'
+  ...
+# Subtest: invalid detection configuration is rejected
+ok 35 - invalid detection configuration is rejected
+  ---
+  duration_ms: 0.1048
+  type: 'test'
+  ...
+# Subtest: HTML escapes hostile report values
+ok 36 - HTML escapes hostile report values
+  ---
+  duration_ms: 0.2594
+  type: 'test'
+  ...
+# Subtest: CSV escapes quotes, commas, and spreadsheet formulas
+ok 37 - CSV escapes quotes, commas, and spreadsheet formulas
+  ---
+  duration_ms: 0.1981
+  type: 'test'
+  ...
+# Subtest: CLI returns useful statuses and exports JSON from another working directory
+ok 38 - CLI returns useful statuses and exports JSON from another working directory
+  ---
+  duration_ms: 229.4634
+  type: 'test'
+  ...
+1..38
+# tests 38
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 323.3201

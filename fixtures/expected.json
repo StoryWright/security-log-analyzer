@@ -1,0 +1,13 @@
+{
+  "alertedIPs": [
+    "192.0.2.10"
+  ],
+  "normalIPs": [
+    "192.0.2.20",
+    "192.0.2.30"
+  ],
+  "expectedRules": [
+    "failure_burst",
+    "success_after_burst"
+  ]
+}

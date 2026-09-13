@@ -1,0 +1,20 @@
+{
+  "node": "v24.19.0",
+  "platform": "win32",
+  "architecture": "x64",
+  "scope": "One local run of analyze() on synthetic in-memory events. Excludes parsing/I/O. Timing and heap deltas vary and are not a scalability guarantee.",
+  "samples": [
+    {
+      "events": 10000,
+      "elapsedMs": 2.33,
+      "heapDeltaBytes": 412560,
+      "alerts": 0
+    },
+    {
+      "events": 100000,
+      "elapsedMs": 8.21,
+      "heapDeltaBytes": 6190976,
+      "alerts": 0
+    }
+  ]
+}
