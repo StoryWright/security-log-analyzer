@@ -1,0 +1,9 @@
+{
+  "engine": "src/analyzer.js",
+  "data": [
+    [
+      "fixtures/auth-demo.jsonl",
+      "sample.jsonl"
+    ]
+  ]
+}

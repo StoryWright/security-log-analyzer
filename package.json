@@ -4,10 +4,17 @@
   "private": true,
   "type": "module",
   "description": "Authentication log parsing, time-window detection, and reviewable reports",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "test": "node --test",
     "demo": "node scripts/demo.js",
-    "benchmark": "node scripts/benchmark.js"
+    "benchmark": "node scripts/benchmark.js",
+    "build:site": "node scripts/build-site.mjs",
+    "test:browser": "node scripts/check-browser.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
   }
 }

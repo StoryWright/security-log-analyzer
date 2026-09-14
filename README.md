@@ -4,6 +4,21 @@
 
 A dependency-free Node.js command-line tool for investigating authentication logs. It extends the original portfolio idea with timestamp validation, configurable time windows, evidence references, allowlists, report exports, and automated tests.
 
+## Browser demo
+
+**[Open the interactive demo](https://storywright.github.io/security-log-analyzer/)**
+
+Load a sample or paste authentication logs, change the detection window, inspect evidence, and download reports. The demo runs in your browser using synthetic fixtures; it does not connect to real accounts or endpoints.
+
+See [browser demo development](docs/BROWSER-DEMO.md) for building and testing.
+
+<details>
+<summary>Demo preview</summary>
+
+![Interactive browser demo](docs/demo-preview.png)
+
+</details>
+
 ## Try it
 
 From this project folder, using Node.js 22 or newer:

@@ -12,3 +12,4 @@ reports/native-wazuh-validation.json
 *.evtx
 *.pcap
 *.pcapng
+_site/
