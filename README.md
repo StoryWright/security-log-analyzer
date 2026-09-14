@@ -82,7 +82,3 @@ flowchart LR
   D --> E[Evidence-linked alerts]
   E --> F[HTML / CSV / JSON]
 ```
-
-## Development provenance
-
-Developed with AI assistance. Source, synthetic fixtures, and reproducible tests are included. Live system deployment is claimed only when supported by separately captured evidence.
